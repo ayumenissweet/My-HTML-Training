@@ -1,58 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>MY First Webpage</title>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Aymen Guerniche" />
+    <title>Travel Agency Page</title>
+    <meta charset="utf-8" />
     <meta
       name="description"
-      content="This is just a test website for me to learn HTML"
+      content="A website about reserving and preparing travels, enjoy a safe"
     />
-    <link rel="icon" href="Linux.png" type="image/x-icon" />
     <link rel="stylesheet" href="main.css" />
   </head>
 
   <body>
-    <h1>Hello Miss GPT! I am practicing HTML!</h1>
-    <h2>My name is Aymen and let me tell you : I want to get rich!</h2>
-    <hr />
-    <p>
-      I am an 18 years old student in university, i'd like to do my best and
-      learn how to program
-    </p>
-    <h3>My Dreams</h3>
-    <p>
-      I'd like to work first as a<em>Full-Stack Developer</em>, then Move on to
-      <strong>Cloud Engineering</strong>
-    </p>
-    <h3>Language i want to learn :</h3>
-
-    <ul>
-      <li>HTML first</li>
-      <li>CSS second</li>
-      <li>JavaScript third</li>
-    </ul>
+    <header>
+      <h1>
+        Please Enjoy a safe travel and have fun, take a look at our
+        destinations!
+      </h1>
+      <p>
+        We provide <em>Amazing</em> Travel packages as well as private tours,
+        don't forget to check them!
+      </p>
+    </header>
 
     <hr />
-    <a href="https://www.linux.org/" target="_blank"
-      ><img src="Linux.png" alt="Linux's Penguin Logo"
-    /></a>
-    <h2>Can i Achieve this ?</h2>
-    <p>
-      With the help of Miss GPT... and other great websites i think i can do it!
-    </p>
-    <p>Links i use :</p>
-    <br /><a href="https://chatgpt.com/" target="_blank"
-      >The Most Important Source to learn</a
+
+    <nav>
+      <ul>
+        <li><a href="#Packages">Learn more about Packages</a></li>
+        <li><a href="#Itin">Checkout our Itineraries</a></li>
+      </ul>
+    </nav>
+
+    <hr />
+
+    <audio
+      src="https://cdn.freecodecamp.org/curriculum/js-music-player/can't-stay-down.mp3"
+      loop
+      controls
+      muted
+    ></audio>
+    <main>
+      <section id="Packages">
+        <h2>Packages</h2>
+        <p>We have several packages that you would like</p>
+        <ul>
+          <li class="Group">
+            <a href="https://www.freecodecamp.org/learn" target="_blank"
+              >Group Travels</a
+            >
+          </li>
+          <li class="Private">
+            <a href="https://www.freecodecamp.org/learn" target="_blank"
+              >Private Tours</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="Itin">
+        <h2>Top Itineraries</h2>
+        <figure class="Itinerarie">
+          <a href="https://www.freecodecamp.org/learn" target="_blank"
+            ><img
+              src="https://cdn.freecodecamp.org/curriculum/labs/colosseo.jpg"
+              alt="A picture displaying the ruins of Rome, a colosseum"
+          /></a>
+          <figcaption>
+            You will be excited to explore the glorious ruins of Rome!
+          </figcaption>
+        </figure>
+
+        <figure class="Itinerarie">
+          <a href="https://www.freecodecamp.org/learn" target="_blank"
+            ><img
+              src="https://cdn.freecodecamp.org/curriculum/labs/alps.jpg"
+              alt="A picture displaying Nature, Snow, and Mountains"
+          /></a>
+          <figcaption>
+            Pleased to have you travel and enjoy the snowy peaks!
+          </figcaption>
+        </figure>
+
+        <figure class="Itinerarie">
+          <a href="https://www.freecodecamp.org/learn" target="_blank"
+            ><img
+              src="https://cdn.freecodecamp.org/curriculum/labs/sea.jpg"
+              alt="A picture displaying a white boat in a sea in a sunny weather"
+          /></a>
+          <figcaption>
+            A long travel in the beach with your wife will be nice!
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <svg
+      width="100"
+      height="100"
+      viewBox="0 0 100 100"
+      xmlns="http://www.w3.org/2000/svg"
     >
-    <br /><a href="https://www.freecodecamp.org/" target="_blank"
-      >The Second Most important source to learn</a
-    >
+      <circle
+        cx="50"
+        cy="50"
+        r="45"
+        stroke="black"
+        stroke-width="4"
+        fill="yellow"
+      />
+      <circle cx="35" cy="40" r="5" fill="black" />
+      <circle cx="65" cy="40" r="5" fill="black" />
+      <path
+        d="M35 65 Q50 80 65 65"
+        stroke="black"
+        stroke-width="4"
+        fill="transparent"
+      />
+    </svg>
 
-    <hr />
-    <p>
-      Learn more about
-      <a href="aboutme.html" target="_blank">Aymen Guerniche</a>
-    </p>
+    <footer><a href="#">Go back to top</a></footer>
   </body>
 </html>
