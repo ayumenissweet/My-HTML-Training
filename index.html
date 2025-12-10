@@ -1,69 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="description" content="" />
     <meta charset="utf-8" />
-    <title>Video Compilation Page</title>
     <link rel="stylesheet" href="main.css" />
+    <link rel="icon" href="Linux.png" type="x/icons" />
+    <title>Event Hub</title>
   </head>
-
   <body>
+    <header>
+      <h1>Event Hub</h1>
+      <nav>
+        <ul>
+          <li><a href="#upcoming-events">Upcoming Events</a></li>
+          <li><a href="#past-events">Past Events</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
-      <!--Initial Tr-->
-      <h1>Video Preview!</h1>
-      <p>In here i am trying to embed a bunch of videos!</p>
-      <section id="Cooking">
-        <h2>Video about cooking!</h2>
-        <p>This video teaches you how to bake pancakes!</p>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/CoaOhiRczw4"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        >
-        </iframe>
+      <section id="upcoming-events">
+        <h2>Upcoming Events</h2>
+        <hr />
+        <article>
+          <h3>A wonderful dance party in a <strong>Huge</strong> Studio</h3>
+          <p>
+            We will host an amazing party, drink, dance, and meet some new
+            friends. At
+            <time datetime="2025-12-20">The 20th December this year!</time>
+          </p>
+        </article>
+        <hr />
+        <article>
+          <h3>Be part of the Welcome Ceremony part for the computer science</h3>
+          <p>
+            Computer science majors are coming to our university soon, and so we
+            must give them everything we've got!
+            <time datetime="2025-12-14">December 14th 2025</time>
+          </p>
+        </article>
       </section>
 
-      <section id="Math">
-        <h2>Video about analysis!</h2>
-        <p>
-          This video teaches you the cauchy theorem and how to use it's negation
-          to prove that a sequence is not a cauchy sequence!
-        </p>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/WsqJi8f1u48?si=10dj8HhEf6rIApyb"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        >
-        </iframe>
-      </section>
+      <hr />
 
-      <section id="Coding">
-        <h2>Video about coding!</h2>
-        <p>
-          This video teaches you how to link AI to the bash terminal using
-          Python and openai!
-        </p>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/K5KVEU3aaeQ?si=Gm_u7NppOGAE8HqS"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        >
-        </iframe>
+      <section id="past-events">
+        <h2>Past Events</h2>
+        <hr />
+        <article>
+          <h3>
+            We will <em>never</em> forget the wonderful lab we did with an old
+            computer we got.
+          </h3>
+          <p>
+            Professor Sam brought a very old and beautiful computer, we decided
+            to use it for our own fun
+          </p>
+          <figure>
+            <img
+              src="https://cdn.freecodecamp.org/curriculum/labs/past-event1.jpg"
+              alt="Old computer used in the lab event"
+            />
+            <figcaption>
+              We used this old computer, powered by windows XP to open folders,
+              write text and do many things!
+            </figcaption>
+          </figure>
+        </article>
+
+        <hr />
+
+        <article>
+          <h3>
+            A study party together, where we did a bunch of events concerning
+            data science
+          </h3>
+          <p>
+            Computer science majors are coming to our university soon, and so we
+            must give them everything we've got!
+          </p>
+          <figure>
+            <img
+              src="https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg"
+              alt="Students studying together at the data science event"
+            />
+            <figcaption>
+              We learned how data is saved and managed, how many scientists need
+              metrics and how to calculate them...
+            </figcaption>
+          </figure>
+        </article>
       </section>
     </main>
   </body>
