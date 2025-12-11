@@ -1,94 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <title>Aymen Guerniche</title>
     <link rel="stylesheet" href="main.css" />
-    <link rel="icon" href="Linux.png" type="x/icons" />
-    <title>Event Hub</title>
+    <link rel="icon" href="Linux.png" />
+    <meta charset="UTF-8" />
+    <meta name="author" content="Aymen Guerniche" />
+    <meta
+      name="description"
+      content="This is a webpage about my portoflio, Explaining my dreams, ambitions and more"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Guerniche Aymen" />
+    <meta property="og:url" content="http://127.0.0.1:5500/index.html" />
+    <meta property="og:image" content="Snowman.png" />
+    <meta
+      property="og:description"
+      content="Discover more about a passionate student who's trying to become a great full-stack developer."
+    />
   </head>
-  <body>
+
+  <body id="top">
     <header>
-      <h1>Event Hub</h1>
-      <nav>
+      <h1>Hello ! My name is Guerniche Aymen</h1>
+      <p>I am a student in USTHB University and i <em>love</em> programming.</p>
+
+      <figure>
+        <img
+          src="Snowman.jpg"
+          alt="A picture of two snowmen, one wearing a blue hat with a scarf and the other one wearing a pink hat alongside lipstick in her mouth"
+        />
+        <figcaption>
+          An image of a snowman i took about 6 months ago... gives me motivation
+        </figcaption>
+      </figure>
+
+      <h2>Consider These :</h2>
+      <nav aria-label="Main Navigation">
         <ul>
-          <li><a href="#upcoming-events">Upcoming Events</a></li>
-          <li><a href="#past-events">Past Events</a></li>
+          <li><a href="#introduction">Introduction to myself!</a></li>
+          <li><a href="#skills">My skills</a></li>
+          <li><a href="#projects">My projects</a></li>
+          <li><a href="#time-table">How i schedule my work!</a></li>
+          <li><a href="#contact">Contact me for work</a></li>
         </ul>
       </nav>
     </header>
 
+    <hr />
+
     <main>
-      <section id="upcoming-events">
-        <h2>Upcoming Events</h2>
-        <hr />
+      <section id="introduction">
+        <h3>
+          I am currently in the path to learning programming and this is my
+          opinion :
+        </h3>
+
         <article>
-          <h3>A wonderful dance party in a <strong>Huge</strong> Studio</h3>
           <p>
-            We will host an amazing party, drink, dance, and meet some new
-            friends. At
-            <time datetime="2025-12-20">The 20th December this year!</time>
+            My ambitions come usually from the challenge, i am trying to do my
+            best because i don't want to be weak compared to others.
           </p>
-        </article>
-        <hr />
-        <article>
-          <h3>Be part of the Welcome Ceremony part for the computer science</h3>
+
           <p>
-            Computer science majors are coming to our university soon, and so we
-            must give them everything we've got!
-            <time datetime="2025-12-14">December 14th 2025</time>
+            Learning programming is quite difficult and its overwhelming, i must
+            follow with university (algebra, analysis,logic gates...) And
+            problem solving which gives me a certain <i lang="fr">déjà vu</i> to
+            past experiences in programming.
           </p>
         </article>
       </section>
 
-      <hr />
+      <section id="skills">
+        <h3>What are my skills?</h3>
+        <ul>
+          <li>Front-End (HTML, CSS)</li>
+          <li>Back-End (Javascript)</li>
+          <li>
+            <s>Cloud infrastructures</s> (Will try to learn it in the future)
+          </li>
+        </ul>
+      </section>
 
-      <section id="past-events">
-        <h2>Past Events</h2>
-        <hr />
-        <article>
-          <h3>
-            We will <em>never</em> forget the wonderful lab we did with an old
-            computer we got.
-          </h3>
-          <p>
-            Professor Sam brought a very old and beautiful computer, we decided
-            to use it for our own fun
-          </p>
-          <figure>
-            <img
-              src="https://cdn.freecodecamp.org/curriculum/labs/past-event1.jpg"
-              alt="Old computer used in the lab event"
-            />
-            <figcaption>
-              We used this old computer, powered by windows XP to open folders,
-              write text and do many things!
-            </figcaption>
-          </figure>
-        </article>
+      <section id="projects">
+        <h3>Learn more about my work</h3>
+        <p>
+          As i am new to this domain, i do not have any form of interesting
+          projects, so the only thing i can provide is this website that i made
+          myself!
+        </p>
 
-        <hr />
+        <dl class="project-box">
+          <dt>
+            A project made for programming a portfolio website (VERY ACTIVE)
+          </dt>
+          <dd>
+            <p class="project-box">
+              <a
+                href="https://github.com/ayumenissweet/My-HTML-Training"
+                target="_blank"
+                >A portfolio Website that i am using for studying HTML</a
+              >
+            </p>
+          </dd>
+        </dl>
+      </section>
 
-        <article>
-          <h3>
-            A study party together, where we did a bunch of events concerning
-            data science
-          </h3>
-          <p>
-            Computer science majors are coming to our university soon, and so we
-            must give them everything we've got!
-          </p>
-          <figure>
-            <img
-              src="https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg"
-              alt="Students studying together at the data science event"
-            />
-            <figcaption>
-              We learned how data is saved and managed, how many scientists need
-              metrics and how to calculate them...
-            </figcaption>
-          </figure>
-        </article>
+      <section id="time-table">
+        <h3>
+          Learning Coding and balancing university is very tough! This is how i
+          manage my time:
+        </h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>
+                <time datetime="08:00">8:00</time>=><time datetime="16:00"
+                  >6:00PM</time
+                >
+              </th>
+              <th>
+                <time datetime="16:00">4PM</time>=><time datetime="22:00"
+                  >10PM</time
+                >
+              </th>
+              <th><time datetime="22:00">10PM</time> => Sleep</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sunday</td>
+              <td>University studies</td>
+              <td>Coding</td>
+              <td>Dinner & Sleep</td>
+            </tr>
+            <tr>
+              <td>Monday</td>
+              <td>University studies</td>
+              <td>Coding</td>
+              <td>Dinner & Sleep</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>University studies</td>
+              <td>Coding</td>
+              <td>Dinner & Sleep</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>University studies</td>
+              <td>Coding</td>
+              <td>Dinner & Sleep</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>University studies</td>
+              <td>Coding</td>
+              <td>Dinner & Sleep</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="contact">
+        <h3>If you are interested in my work contact me:</h3>
+        <ul>
+          <li><a href="https://github.com/ayumenissweet">Github</a></li>
+          <li><a href="mailto:ayumishaste@gmail.com">Email</a></li>
+          <li><a href="tel:+213696041061">+213 69 60 410 61</a></li>
+        </ul>
       </section>
     </main>
+
+    <footer>
+      <p>&lt;&lt;&lt; &copy; Guerniche Aymen Abderrahim &gt;&gt;&gt;</p>
+      <a href="#top">Back to Top</a>
+    </footer>
   </body>
 </html>

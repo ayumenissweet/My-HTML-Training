@@ -8,3 +8,7 @@ body {
   padding: 20px;
   font-family: sans-serif;
 }
+
+th {
+  background-color: #f2f2f2;
+}
