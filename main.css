@@ -1,5 +1,6 @@
 html {
   font-size: 22px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -10,5 +11,20 @@ body {
 }
 
 th {
-  background-color: #f2f2f2;
+  background-color: #000000;
+}
+
+textarea {
+  width: 95%;
+  max-width: 95%;
+  min-height: 150px;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+fieldset label,
+fieldset input,
+fieldset select {
+  display: block;
+  margin: 0.5rem 0;
 }

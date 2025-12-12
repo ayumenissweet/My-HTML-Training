@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta
       name="google-site-verification"
       content="lo5RzIYo3N8YVbA4ZLU7cvXALrh0Xft-e-0_1bAegSI"
@@ -8,7 +9,6 @@
     <title>Aymen Guerniche</title>
     <link rel="stylesheet" href="main.css" />
     <link rel="icon" href="Linux.png" />
-    <meta charset="UTF-8" />
     <meta name="author" content="Aymen Guerniche" />
     <meta
       name="description"
@@ -16,7 +16,7 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="Guerniche Aymen" />
-    <meta property="og:url" content="http://127.0.0.1:5500/index.html" />
+    <meta property="og:url" content="https://ayumenissweet.github.io" />
     <meta property="og:image" content="Snowman.png" />
     <meta
       property="og:description"
@@ -30,10 +30,7 @@
       <p>I am a student in USTHB University and i <em>love</em> programming.</p>
 
       <figure>
-        <img
-          src="Snowman.jpg"
-          alt="A picture of two snowmen, one wearing a blue hat with a scarf and the other one wearing a pink hat alongside lipstick in her mouth"
-        />
+        <img src="Snowman.jpg" alt="Two snowmen wearing hats and scarves" />
         <figcaption>
           An image of a snowman i took about 6 months ago... gives me motivation
         </figcaption>
@@ -165,13 +162,55 @@
               <td>Dinner & Sleep</td>
             </tr>
           </tbody>
+          <caption>
+            Just an example and its not really that strict...
+          </caption>
         </table>
+      </section>
+
+      <br />
+
+      <section id="feedback">
+        <form action="https://formspree.io/f/xrbnrjgy" method="POST">
+          <fieldset>
+            <legend>
+              What do you think? Please share your opinion to help me improve
+              this webpage!
+            </legend>
+
+            <label for="yourOpinion">Your feedback:</label>
+            <textarea id="yourOpinion" name="feedback" required></textarea>
+          </fieldset>
+
+          <fieldset>
+            <legend>Personal Information (Optional)</legend>
+            <label for="club">Are you a member of OMC?</label>
+            <input type="checkbox" name="club" id="club" />
+
+            <label for="field">Tell me what you study!</label>
+            <select name="field" id="" field>
+              <option selected value="front-end">I study Front-End</option>
+              <option value="back-end">I study Back-End</option>
+              <option value="both">Both!</option>
+              <option value="something else">Something Else</option>
+            </select>
+
+            <label for="other-field">Something else:</label>
+            <input type="text" id="other-field" name="other-field" />
+          </fieldset>
+
+          <button id="feedbackSubmit" type="submit">Submit!</button>
+        </form>
       </section>
 
       <section id="contact">
         <h3>If you are interested in my work contact me:</h3>
         <ul>
-          <li><a href="https://github.com/ayumenissweet">Github</a></li>
+          <li>
+            <a href="https://github.com/ayumenissweet" target="_blank"
+              >Github</a
+            >
+          </li>
           <li><a href="mailto:ayumishaste@gmail.com">Email</a></li>
           <li><a href="tel:+213696041061">+213 69 60 410 61</a></li>
         </ul>
