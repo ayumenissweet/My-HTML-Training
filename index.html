@@ -188,7 +188,7 @@
             <input type="checkbox" name="club" id="club" />
 
             <label for="field">Tell me what you study!</label>
-            <select name="field" id="" field>
+            <select name="field" id="field">
               <option selected value="front-end">I study Front-End</option>
               <option value="back-end">I study Back-End</option>
               <option value="both">Both!</option>
@@ -202,6 +202,17 @@
           <button id="feedbackSubmit" type="submit">Submit!</button>
         </form>
       </section>
+
+      <script>
+        const form = document.querySelector("#feedback form");
+        form.addEventListener("submit", function (e) {
+          const feedback = document.getElementById("yourOpinion").value.trim();
+          if (!feedback) {
+            e.preventDefault(); // stop submission
+            alert("Please write your feedback before submitting!");
+          }
+        });
+      </script>
 
       <section id="contact">
         <h3>If you are interested in my work contact me:</h3>
