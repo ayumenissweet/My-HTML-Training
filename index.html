@@ -29,15 +29,15 @@
       <h1>Hello ! My name is Guerniche Aymen</h1>
       <p>I am a student in USTHB University and i <em>love</em> programming.</p>
 
-      <figure>
+      <figure class="picture">
         <img src="Snowman.jpg" alt="Two snowmen wearing hats and scarves" />
         <figcaption>
           An image of a snowman i took about 6 months ago... gives me motivation
         </figcaption>
       </figure>
 
-      <h2>Consider These :</h2>
-      <nav aria-label="Main Navigation">
+      <nav class="nav-box" aria-label="Main Navigation">
+        <h2>Consider These :</h2>
         <ul>
           <li><a href="#introduction">Introduction to myself!</a></li>
           <li><a href="#skills">My skills</a></li>
@@ -48,10 +48,8 @@
       </nav>
     </header>
 
-    <hr />
-
     <main>
-      <section id="introduction">
+      <section id="introduction" class="content-box">
         <h3>
           I am currently in the path to learning programming and this is my
           opinion :
@@ -72,7 +70,7 @@
         </article>
       </section>
 
-      <section id="skills">
+      <section id="skills" class="content-box tech-skills">
         <h3>What are my skills?</h3>
         <ul>
           <li>Front-End (HTML, CSS)</li>
@@ -83,20 +81,22 @@
         </ul>
       </section>
 
-      <section id="projects">
-        <h3>Learn more about my work</h3>
-        <p>
-          As i am new to this domain, i do not have any form of interesting
-          projects, so the only thing i can provide is this website that i made
-          myself!
-        </p>
+      <section id="projects" class="content-box">
+        <div>
+          <h3>Learn more about my work</h3>
+          <p>
+            As i am new to this domain, i do not have any form of interesting
+            projects, so the only thing i can provide is this website that i
+            made myself!
+          </p>
+        </div>
 
         <dl class="project-box">
           <dt>
             A project made for programming a portfolio website (VERY ACTIVE)
           </dt>
           <dd>
-            <p class="project-box">
+            <p>
               <a
                 href="https://github.com/ayumenissweet/My-HTML-Training"
                 target="_blank"
@@ -108,13 +108,13 @@
         </dl>
       </section>
 
-      <section id="time-table">
+      <section id="time-table" class="content-box">
         <h3>
           Learning Coding and balancing university is very tough! This is how i
           manage my time:
         </h3>
 
-        <table>
+        <table class="time-table">
           <caption>
             Just an example and its not really that strict...
           </caption>
@@ -169,11 +169,9 @@
         </table>
       </section>
 
-      <br />
-
-      <section id="feedback">
+      <section id="feedback" class="content-box">
         <form action="https://formspree.io/f/xrbnrjgy" method="POST">
-          <fieldset>
+          <fieldset class="feedback">
             <legend>
               What do you think? Please share your opinion to help me improve
               this webpage!
@@ -183,7 +181,7 @@
             <textarea id="yourOpinion" name="feedback" required></textarea>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="personal-info">
             <legend>Personal Information (Optional)</legend>
             <label for="club">Are you a member of OMC?</label>
             <input type="checkbox" name="club" id="club" />
@@ -200,10 +198,13 @@
             <input type="text" id="other-field" name="other-field" />
           </fieldset>
 
-          <button id="feedbackSubmit" type="submit">Submit!</button>
+          <button id="feedbackSubmit" class="button" type="submit">
+            Submit!
+          </button>
         </form>
       </section>
 
+      <!--Currently not learning this script part!-->
       <script>
         const form = document.querySelector("#feedback form");
         form.addEventListener("submit", function (e) {
@@ -215,7 +216,7 @@
         });
       </script>
 
-      <section id="contact">
+      <section id="contact" class="content-box">
         <h3>If you are interested in my work contact me:</h3>
         <ul>
           <li>
