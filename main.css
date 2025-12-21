@@ -3,15 +3,59 @@ html {
   scroll-behavior: smooth;
 }
 
+h1 {
+  text-align: center;
+}
+
 body {
-  background-color: rgb(181, 66, 66);
-  color: aliceblue;
+  background-color: rgb(60, 52, 52);
+  color: rgb(41, 119, 187);
   padding: 20px;
   font-family: sans-serif;
 }
 
-th {
-  background-color: #000000;
+figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-box {
+  background-color: rgb(27, 22, 22);
+  margin-bottom: 20px;
+  border-radius: 15px;
+  border: 10px;
+}
+
+.content-box.mini-intro {
+  text-align: center;
+}
+
+.profile-picture {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.profile-picture img {
+  width: 200px;
+  height: auto;
+  display: block;
+}
+
+.profile-picture figcaption {
+  max-width: 200px;
+  line-height: 1.5;
+}
+
+:link,
+:visited {
+  color: rgb(14, 135, 14);
+}
+
+table {
+  background-color: rgb(146, 146, 146);
+  color: aliceblue;
 }
 
 textarea {
@@ -20,6 +64,34 @@ textarea {
   min-height: 150px;
   display: block;
   margin: 0.5rem 0;
+}
+
+.time-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.time-table caption {
+  caption-side: top;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.time-table th {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.time-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
 }
 
 fieldset label,
