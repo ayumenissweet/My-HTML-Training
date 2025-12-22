@@ -24,7 +24,8 @@ figure {
   background-color: rgb(27, 22, 22);
   margin-bottom: 20px;
   border-radius: 15px;
-  border: 10px;
+  border: 5px solid rgb(41, 119, 187);
+  padding: 10px;
 }
 
 .content-box.mini-intro {
@@ -46,6 +47,10 @@ figure {
 .profile-picture figcaption {
   max-width: 200px;
   line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
 }
 
 :link,
